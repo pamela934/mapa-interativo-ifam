@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Tour Virtual IFAM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #00563F;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      gap: 40px;
+      max-width: 1300px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .mapa {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .mapa img {
+      width: 100%;
+      height: auto;
+      border: none;
+    }
+
+    .mapa a {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .legenda {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    .legenda h2 {
+      margin-bottom: 10px;
+    }
+
+    .item-legenda {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .bolinha {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 8px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tour Virtual IFAM - Clique em um campus no mapa</h1>
+  </header>
+
+  <div class="container">
+
+    <!-- MAPA -->
+    <div class="mapa">
+      <img src="https://pamelabernardo2001.wordpress.com/wp-content/uploads/2025/05/chatgpt-image-17-de-mai.-de-2025-14_38_49.png"
+           alt="Mapa Amazonas - IFAM">
+
+      <a href="manauszonaleste.html" title="São Gabriel da Cachoeira" style="top: 20%; left: 29%; background-color: red;"></a>
+      <a href="https://www2.ifam.edu.br/campus/tabatinga" title="Tabatinga" style="top: 48%; left: 19.5%; background-color: yellow;"></a>
+      <a href="https://www2.ifam.edu.br/campus/cmdi" title="Maués" style="top: 58%; left: 90%; background-color: blue;"></a>
+      <a href="https://www2.ifam.edu.br/campus/cmt" title="Boca do Acre" style="top: 74%; left: 32%; background-color: orange;"></a>
+      <a href="https://www2.ifam.edu.br/campus/cmv" title="Eirunepé" style="top: 65%; left: 16%; background-color: purple;"></a>
+      <a href="https://www2.ifam.edu.br/campus/parintins" title="Parintins" style="top: 39.9%; left: 96.5%; background-color: pink;"></a>
+      <a href="https://www2.ifam.edu.br/campus/itacoatiara" title="Itacoatiara" style="top: 44%; left: 86%; background-color: cyan;"></a>
+      <a href="https://www2.ifam.edu.br/campus/manacapuru" title="Manacapuru" style="top: 47%; left: 73%; background-color: brown;"></a>
+      <a href="https://www2.ifam.edu.br/campus/humaita" title="Humaitá" style="top: 67%; left: 63%; background-color: magenta;"></a>
+      <a href="https://www2.ifam.edu.br/campus/labrea" title="Lábrea" style="top: 71%; left: 44%; background-color: gray;"></a>
+      <a href="https://www2.ifam.edu.br/campus/tefe" title="Tefé" style="top: 51%; left: 50%; background-color: teal;"></a>
+      <a href="https://www2.ifam.edu.br/campus/presidente-figueiredo" title="Presidente Figueiredo" style="top: 34%; left: 80%; background-color: navy;"></a>
+
+      <!-- Tour 360° no Kuula -->
+      <a href="https://kuula.co/share/hb9yS?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
+         title="Manaus Zona Leste"
+         style="top: 40%; left: 83%; background-color: limegreen;"
+         target="_blank">
+      </a>
+
+      <a href="https://www2.ifam.edu.br/campus/manaus-centro" title="Manaus Centro" style="top: 40%; left: 80%; background-color: darkred;"></a>
+      <a href="https://www2.ifam.edu.br/campus/manaus-distrito-industrial" title="Manaus Distrito Industrial" style="top: 41%; left: 81%; background-color: olive;"></a>
+      <a href="https://www2.ifam.edu.br/campus/iranduba" title="Iranduba" style="top: 44%; left: 78%; background-color: gold;"></a>
+      <a href="https://www2.ifam.edu.br/campus/coari" title="Coari" style="top: 50%; left: 61%; background-color: green;"></a>
+    </div>
+
+    <!-- LEGENDA -->
+    <div class="legenda">
+      <h2>Legenda dos Campi IFAM</h2>
+      <div class="item-legenda"><span class="bolinha" style="background-color: red;"></span> São Gabriel da Cachoeira</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: yellow;"></span> Tabatinga</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: blue;"></span> Maués</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: orange;"></span> Boca do Acre</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: purple;"></span> Eirunepé</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: pink;"></span> Parintins</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: cyan;"></span> Itacoatiara</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: brown;"></span> Manacapuru</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: magenta;"></span> Humaitá</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: gray;"></span> Lábrea</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: teal;"></span> Tefé</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: navy;"></span> Presidente Figueiredo</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: limegreen;"></span> Manaus Zona Leste (Tour 360°)</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: darkred;"></span> Manaus Centro</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: olive;"></span> Manaus Distrito Industrial</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: gold;"></span> Iranduba</div>
+      <div class="item-legenda"><span class="bolinha" style="background-color: green;"></span> Coari</div>
+    </div>
+  </div>
+
+  <footer>
+    Desenvolvido por [Seu Nome] • Tour Virtual IFAM • © 2025
+  </footer>
+
+</body>
+</html>
